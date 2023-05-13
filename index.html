@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cyber Hunts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+<style>
+.button {
+  border: round;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
+.button {background-color: red;} /* Green */
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-black w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Cyber Hunts<br></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#description" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Description</a> 
+    <a href="#tips" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tips</a> 
+    <a href="#trends" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">New Trends</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conract Us</a><br><br><br><br><br><br><br>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sign Up</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
+  <span>C/H</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container " style="margin-top:80px" id="mainName">
+    <h1 class="w3-jumbo"><b>Cyber Hunts</b></h1>
+    <h1 class="w3-xxxlarge w3-text-black"><b>Heats</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+        <a href="https://www.f5.com/pdf/case-study/global-financial-services-company-grows-revenue-case-study.pdf"><img src="F5.png" style="width:100%" alt="F5 Case Study"></a>
+    </div>
+
+    <div class="w3-half">
+        <a href="https://www.f5.com/pdf/case-study/f5-helps-digital-bank-detect-177-percent-more-fraud-than-existing-fraud-solutions.pdf"><img src="Fraud.png" style="width:100%" alt="F5 Case Study"></a>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Description -->
+  <div class="w3-container" id="description" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Description.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are "Cyber Hunter" a group of Passionate cyber security reporters we focus on what's the latest news, trends, and heats in cyber-security world that designed for people like us !</p>
+    <p> You can find trends in the latest vulnerabilities, attacks, and more and ways to mitigate them. Also, we report the latest inventions and news. You can find all events and conferences around the world by subscribing to our website. Lastly - Don’t hesitate to find more !
+    </p>
+  </div>
+  
+  <!-- Tips -->
+  <div class="w3-container" id="tips" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Tips.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Most important tips to have secure experience while connected to the internet.</p>
+    <p>The Internet is ultimately made up of people. The growth of the Internet has been dependent on voluntarily working together and cooperating. The success and promise of the Internet continue to depend heavily on cooperation and collaboration fpr ultimate security.
+    </p>
+    <p><b>Our tips for you:</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="vpn.png" alt="vpn" style="width:100%">
+        <div class="w3-container">
+          <h3>Vpn</h3>
+          <p class="w3-opacity" style="color: red">For secure connection </p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="ad.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Adblocker</h3>
+          <p class="w3-opacity" style="color: red">Install a Reliable Adblocker</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="cookie.webp" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Coookies</h3>
+          <p class="w3-opacity" style="color: red"> Disable Unwanted Cookies</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trends -->
+  <div class="w3-container" id="trends" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Trends.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-black"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Web Tech and Security - <a href="Names.html" title="W3.CSS" target="_blank" class="w3-hover-opacity">Group 3</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
