@@ -2,18 +2,18 @@
 
 ## Description
 
-This code allow you to encrypt and decrypt any image you have using XOR encryption algorithm 
+This 
 
 ## Getting Started
 
 ### Dependencies
 
-* You need to install PIL library to run this code
+* You need to install 
 
 
 ### Installing
 
-* You may use the following command to install PIL/Pillow :
+* You may use the following command to install :
 
 
 ```
@@ -24,6 +24,6 @@ pip install pillow
 
 - Razan Alogaiel 
 - Hana Saleh
+- [@DanaOG](https://www.github.com/DanaOG)
 - Mariam Alomari
 - Sharifa Alsadah
-- Dana Alghamdi
