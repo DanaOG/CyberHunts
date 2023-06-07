@@ -12,17 +12,8 @@ PhpMyAdmin administration tool was utilized to produce and deploy this mockup de
 
 ### Dependencies
 
-* You need to install 
+* We worked with LAMP (Linux, Apache, MySQL, PHP)
 
-
-### Installing
-
-* You may use the following command to install :
-
-
-```
-pip install pillow
-```
 
 ## Authors
 
